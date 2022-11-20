@@ -17,10 +17,10 @@ class FileTest {
         Directory anotherDirectory = new Directory("another_directory");
         someDirectory.addChildFile(anotherDirectory);
 
-        assertEquals(3, someDirectory.getChilds().size());
-        assertEquals("another_directory", someDirectory.getChilds().get(2).getName());
-        assertInstanceOf(File.class, someDirectory.getChilds().get(0));
-        assertInstanceOf(File.class, someDirectory.getChilds().get(1));
-        assertInstanceOf(Directory.class, someDirectory.getChilds().get(2));
+        assertEquals(3, someDirectory.getChildren().size());
+        assertEquals("another_directory", someDirectory.getChildren().get(2).getName());
+        assertInstanceOf(File.class, someDirectory.getChildren().get(0));
+        assertInstanceOf(File.class, someDirectory.getChildren().get(1));
+        assertInstanceOf(Directory.class, someDirectory.getChildren().get(2));
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Directory implements File {
     private final String name;
-    private final List<File> childs = new ArrayList<>();
+    private final List<File> children = new ArrayList<>();
 
     public Directory(String name) {
         this.name = name;
@@ -16,11 +16,11 @@ public class Directory implements File {
         return name;
     }
 
-    public List<File> getChilds() {
-        return childs;
+    public List<File> getChildren() {
+        return children;
     }
 
     public void addChildFile(File file) {
-        childs.add(file);
+        children.add(file);
     }
 }
