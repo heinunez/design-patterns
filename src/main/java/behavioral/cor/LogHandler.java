@@ -1,4 +1,4 @@
-package behavioral.cop;
+package behavioral.cor;
 
 import lombok.RequiredArgsConstructor;
 
